@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image" href="linus.jpeg">
+</head>
+<body>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            border-color: aqua;
+            border-collapse: collapse;
+            padding: 5px;
+
+            .hb{
+                font-weight: bolder;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+    </style>
+    <table>
+        <form action="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" placeholder="Enter "></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" placeholder="Enter your Email"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Contact Number</label></td>
+                <td><input type="number" id="gender" placeholder="Enter Contact Number"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <select id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="can't">Can't determine</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date">Date of Birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="rating">Rating</label></td>
+                <td>
+                    <input type="radio" name="rating" id="r"><label for="r" class="hb">1</label>
+                    <input type="radio" name="rating" id="r"><label for="r" class="hb">2</label>
+                    <input type="radio" name="rating" id="r"><label for="r" class="hb">3</label>
+                    <input type="radio" name="rating" id="r"><label for="r" class="hb">4</label>
+                    <input type="radio" name="rating" id="r"><label for="r" class="hb">5</label>
+                </td>
+                <tr>
+                    <td colspan="2"><label for="message">Enter your message</label></td>
+                </tr>
+            <tr>
+                <td colspan="2"><textarea placeholder="Enter your text here" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr><td><input type="submit" value="Send"></td>
+            <td><input type="reset" value="reset"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
